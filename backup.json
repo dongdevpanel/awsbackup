@@ -1,0 +1,17 @@
+{
+    "BackupPlan": {
+        "BackupPlanName": "neuva-backup-plan",
+        "Rules": [
+            {
+                "RuleName": "neuva-backup-rule",
+                "TargetBackupVaultName": "neuva-backup-vault",
+                "ScheduleExpression": "cron(0 5 ? * * *)",
+                "StartWindowMinutes": 480,
+                "CompletionWindowMinutes": 540
+            }
+        ]
+    },
+    "BackupPlanTags": {
+        "Name": "neuva-backup-plan"
+    }
+}
